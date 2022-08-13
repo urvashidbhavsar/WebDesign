@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        height: 50px;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+      }
+      img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 25px;
+      }
+      .logo {
+        width: 50%;
+      }
+      nav {
+        width: 50%;
+        text-align: right;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        justify-content: space-around;
+        display: inline-block;
+        padding: 20px;
+        /* margin: 20px; */
+      }
+      #center_content {
+        width: 100%;
+        height: 300px;
+        display: flex;
+      }
+      aside {
+        width: 70%;
+        padding: 40px;
+        background-color: beige;
+      }
+      article {
+        width: 30%;
+        padding: 40px;
+        background-color: azure;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.jpg" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Contect</li>
+          <li>About As</li>
+        </ul>
+      </nav>
+    </header>
+    <section id="center_content">
+      <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eaque
+        omnis labore optio voluptas cupiditate reiciendis, nihil mollitia
+        excepturi ad in, blanditiis eveniet minus sint. Libero dolorum unde
+        itaque sequi. this is <code>artical</code> tag
+      </article>
+      <aside>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        voluptatibus maiores quasi mollitia saepe dolore enim nesciunt ducimus
+        dolorem vel repudiandae animi labore soluta repellat vitae laudantium,
+        illo, dolores earum? <br />
+        this is <code>aside</code> tag.
+      </aside>
+    </section>
+  </body>
+</html>
