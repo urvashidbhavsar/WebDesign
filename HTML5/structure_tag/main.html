@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        height: 50px;
+        width: 100%;
+        background-color: bisque;
+        display: flex;
+      }
+      .logo img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 25px;
+      }
+      .logo {
+        width: 50%;
+      }
+      nav {
+        width: 50%;
+        text-align: right;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        justify-content: space-around;
+        display: inline-block;
+        padding: 20px;
+        /* margin: 20px; */
+      }
+      main {
+        width: 100%;
+      }
+      .img1 {
+        margin-top: 20px;
+        height: 500px;
+        background-image: url(center.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .content {
+        position: absolute;
+        top: 300px;
+        left: 40%;
+        font-size: 80px;
+        color: white;
+        text-shadow: 5px 5px 5px black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.jpg" alt="" />
+      </div>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Products</li>
+          <li>Contect</li>
+          <li>About As</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="img1"></div>
+      <div class="content">Welcome</div>
+    </main>
+  </body>
+</html>
