@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- used for draw 2d graphics -->
+    <canvas
+      width="500px"
+      height="300px"
+      style="border-style: double"
+      id="myCanvas"
+    ></canvas>
+    <script>
+      // draw a circle
+      var cir = document.getElementById("myCanvas");
+      var ct = cir.getContext("2d");
+      // ct.arc(200,100,80,0,2*Math.PI)
+      // ct.stroke()
+
+      // x1,y1
+      ct.moveTo(0, 200);
+      // x2,y2
+      ct.lineTo(200, 200);
+      ct.stroke();
+
+      ct.font = "30px Arial";
+      ct.strokeText("Hello world", 20, 20);
+    </script>
+  </body>
+</html>
