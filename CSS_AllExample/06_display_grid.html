@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 200px;
+        width: 200px;
+      }
+      .outer-img {
+        display: grid;
+        /* you can use auto value or 1fr 
+        1fr - 1 fraction 
+        grid take a space automatically*/
+        /* grid-template-columns: auto auto auto; */
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-img">
+      <div class="img1">
+        <img
+          src="download.png"
+          alt=""
+          style="border-style: dotted; border-width: 2px"
+        />
+      </div>
+      <div class="img2">
+        <img src="img2.jpg" alt="" />
+      </div>
+      <div class="img3">
+        <img src="img4.jpg" alt="" />
+      </div>
+      <div class="img4">
+        <img src="img3.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>

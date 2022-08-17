@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      nav {
+        background-color: antiquewhite;
+      }
+      ul {
+        list-style: none;
+      }
+      /* parent child */
+      .inline-ex li {
+        display: inline;
+        /* when use display inline it take content in one line and it not consider height and width also not count padding here.*/
+        /* padding: 20px; */
+        background-color: aqua;
+        height: 100px;
+        width: 100px;
+      }
+      .inline-b-ex li {
+        /* when use display inline-block it take content in one line and it will count height and width also */
+        display: inline-block;
+        background-color: aqua;
+        /* padding: 20px; */
+        height: 100px;
+        width: 100px;
+      }
+      .block-ex li {
+        /* when use display block it not take content in one line and it also count height and width */
+        display: block;
+        background-color: burlywood;
+        height: 50px;
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="inline-ex">
+        <li>Home</li>
+        <li>Contect</li>
+        <li>About As</li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="inline-b-ex">
+        <li>Home</li>
+        <li>Content</li>
+        <li>About As</li>
+      </ul>
+    </nav>
+    <nav>
+      <ul class="block-ex">
+        <li>Home</li>
+        <li>Content</li>
+        <li>About As</li>
+      </ul>
+    </nav>
+  </body>
+</html>
