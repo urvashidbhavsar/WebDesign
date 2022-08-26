@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        margin: 50px 0px 0px 200px;
+      }
+      img {
+        height: 200px;
+        width: 150px;
+        border: 2px solid tomato;
+      }
+      img:hover {
+        border-radius: 40px;
+        margin: 100px;
+      }
+      #trans {
+        /* duration property timing_function */
+        transition: 2s all ease-out;
+        transition-delay: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="img1.jpg" alt="" id="trans" />
+    </div>
+  </body>
+</html>
