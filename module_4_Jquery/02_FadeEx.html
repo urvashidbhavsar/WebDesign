@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #block {
+        width: 100px;
+        height: 100px;
+        display: block;
+        background-color: rgb(155, 155, 214);
+        border: 2px solid blue;
+      }
+      #block1 {
+        width: 100px;
+        height: 100px;
+        display: block;
+        background-color: red;
+        border: 2px solid blue;
+      }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#in").click(function () {
+          $("#block").fadeIn(3000);
+        });
+      });
+      $(document).ready(function () {
+        $("#out").click(function () {
+          $("#block").fadeOut(3000);
+        });
+      });
+      $(document).ready(function () {
+        $("#toggle").click(function () {
+          $("#block").fadeToggle(3000);
+        });
+      });
+      $(document).ready(function () {
+        $("#to").click(function () {
+          $("#block1").fadeTo("slow", 0.5);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <button id="out">FadeOut</button>
+    <button id="in">FadeIn</button>
+    <button id="toggle">FadeToggle</button>
+    <button id="to">FadeTo</button>
+    <hr />
+    <br />
+    <br />
+    <div id="block"></div>
+    <br /><br />
+    <div id="block1"></div>
+  </body>
+</html>

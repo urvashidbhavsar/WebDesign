@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <script src="jquery.js"></script>
+    <style>
+        div{
+            height: 100px; width: 100px;
+            border: 2px solid black;
+            background-color: blue;
+            border-radius: 50%;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var div1 = $("div");
+                div1.animate({height: '200px', opacity: '0.4'}, "slow");
+                div1.animate({width: '200px', opacity: '0.8'}, "slow");
+                div1.animate({height: '50px', opacity: '0.4'}, "slow");
+                div1.animate({width: '50px', opacity: '0.8'}, "slow");
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>Start Animation</button> <br><br>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 100px; height: 100px;
+            display: block;
+            background-color: rgb(155, 155, 214);
+            border:2px solid blue;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("div").hide();
+            });
+        });
+        $(document).ready(function(){
+            $("#show").click(function(){
+                $("div").show();
+            });
+        });
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $("div").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <br> <br>
+    <div id="block"></div>
+</body>
+</html>

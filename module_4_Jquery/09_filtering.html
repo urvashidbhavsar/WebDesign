@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtering Example</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("div").first().css({"color":"white","border":"5px dashed blue"});
+            // $("div").last().css({"color":"white","border":"5px dashed blue"});
+            // $("div").eq(1).css({"color":"white","border":"5px dashed blue"});
+            // $("div").filter(".border").css({"color":"white","border":"5px dashed blue"});
+            $("div").not(".border").css({"color":"white","border":"5px dashed blue"});
+        });
+    </script>
+    <style>
+        div{
+            background-color: rgb(147, 147, 204);
+            width: 250px;
+            height: 150px;
+        }
+        .border{
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptate officiis. Commodi, cum debitis excepturi, natus quis officia minus nihil ullam sed mollitia, aliquid accusamus hic qui laudantium vel assumenda.
+    </div> <br>
+    <div class="border">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptate officiis. Commodi, cum debitis excepturi, natus quis officia minus nihil ullam sed mollitia, aliquid accusamus hic qui laudantium vel assumenda.
+    </div> <br>
+    <div class="border">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptate officiis. Commodi, cum debitis excepturi, natus quis officia minus nihil ullam sed mollitia, aliquid accusamus hic qui laudantium vel assumenda.
+    </div> <br>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, voluptate officiis. Commodi, cum debitis excepturi, natus quis officia minus nihil ullam sed mollitia, aliquid accusamus hic qui laudantium vel assumenda.
+    </div> <br>
+</body>
+</html>

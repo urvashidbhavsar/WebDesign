@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Classes</title>
+    <script src="jquery.js"></script>
+    <style>
+        .fontEx{
+            color: blue;
+            font-size: 25px;
+            font-style: italic;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#add").click(function(){
+                $("#text").addClass("fontEx");
+            });
+            $("#remove").click(function(){
+                $("#text").removeClass("fontEx");
+            });
+            $("#toggle").click(function(){
+                $("#text").toggleClass("fontEx");
+            });
+            $("#css").click(function(){
+                $("#text").css("background-color","yellow","border-style","2px");
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <button id="add">Add CSS</button> 
+    <button id="remove">Remove CSS</button>
+    <button id="toggle">Toggle Class</button>
+    <button id="css">CSS</button>
+    <p id="text">This is paragraph</p>
+
+</body>
+</html>

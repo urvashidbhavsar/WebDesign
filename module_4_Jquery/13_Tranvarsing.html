@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing Example</title>
+    <style>
+        .ancestor{
+             display: block;
+             border: 2px solid lightgrey;
+             color: lightgrey;
+             padding: 5px;
+             margin: 15px;
+        }
+        a{
+            text-decoration: none;
+            color: lightgrey;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     $("li").parent().css({"border":"2px solid blue"});
+        // });
+        // $(document).ready(function(){
+        //     $("li").parentsUntil().css({"border":"2px solid blue"});
+        // });
+        // $(document).ready(function(){
+        //     $("li").parents().css({"border":"2px solid blue"});
+        // });
+        // $(document).ready(function(){
+        //     $("li").children().css({"border":"2px solid blue"});
+        // });
+        $(document).ready(function(){
+            $("ul").find("li").css({"border":"2px solid blue"});
+        });
+    </script>
+</head>
+<body>
+    <div class="ancestor">
+        <ul> Subject
+            <li>HTML</li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Product Image Zoom On Hover Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  </head>
+  <body>
+    <div class="cn f a j">
+      <div class="wp f">
+        <aside>
+          <div class="zoom">
+            <div class="original">
+              <img
+                src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+                id="target"
+              />
+            </div>
+            <div class="viewer">
+              <img
+                src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHx8&w=1000&q=80"
+              />
+            </div>
+            <div class="magnifier"></div>
+          </div>
+        </aside>
+        <aside>
+          <h2>Look this awesome image</h2>
+          <div class="mgt">
+            <input type="range" min="2" max="10" value="2" />
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- <script type="text/javascript" src="js/zoom.js"></script> -->
+    <script src="js/zoom.js"></script>
+    <script>
+      var l = $("#target").zoom(2);
+
+      $('input[type="range"]').on("change", function () {
+        l.setZoom(this.value);
+      });
+    </script>
+    <script>
+      var _gaq = _gaq || [];
+      _gaq.push(["_setAccount", "UA-36251023-1"]);
+      _gaq.push(["_setDomainName", "jqueryscript.net"]);
+      _gaq.push(["_trackPageview"]);
+
+      (function () {
+        var ga = document.createElement("script");
+        ga.type = "text/javascript";
+        ga.async = true;
+        ga.src =
+          ("https:" == document.location.protocol
+            ? "https://ssl"
+            : "http://www") + ".google-analytics.com/ga.js";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>

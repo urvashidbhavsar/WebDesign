@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaining Example</title>
+    <script src="jquery.js"></script>
+    <style>
+        #block{
+            height: 100px; width: 100px;
+            border: 2px solid black;
+            background-color: blue;
+        }
+    </style>
+   <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#block").css("background-color","skyblue").slideUp(3000).slideDown(3000);
+            });
+        });
+   </script>
+</head>
+<body>
+    <button>Click here</button> <br><br>
+    <div id="block"></div>
+</body>
+</html>
