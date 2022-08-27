@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid saddlebrown;
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+        }
+        @keyframes move_ele{
+            0%{
+                margin-left: 50px;
+            }
+            50%{
+                margin-left: 500px;
+            }
+            100%{
+                margin-left: 700px;
+            }
+        }
+        .div1{
+            animation: move_ele 2s ease 2s infinite alternate backwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+</body>
+</html>

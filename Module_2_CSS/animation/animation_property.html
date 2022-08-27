@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid saddlebrown;
+            background-color: bisque;
+            height: 100px;
+            width: 100px;
+        }
+        @keyframes move_ele{
+            from{height: 100px; width: 100px;}
+            to{height: 200px; width: 200px; background-color: aqua;}
+        }
+        .div1{
+            animation-name: move_ele;
+            /* set duration or delay timing in milisecond or second */
+            animation-duration: 2s;
+            animation-delay: 2s;
+            /* set function in ease / ease-in / ease-out / ease-in-out / linear  */
+            animation-timing-function: ease;
+            animation-iteration-count: 3;
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+
+    </div>
+</body>
+</html>
