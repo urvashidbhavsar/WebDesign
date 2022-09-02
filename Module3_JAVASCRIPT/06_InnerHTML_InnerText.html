@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Hello world</p>
+    <p id="p2"></p>
+
+    <script>
+        // The innerHTML property can be used to write the dynamic html on the html document.
+        document.getElementById("p1").innerHTML="<style>p{color:blue;}</style>";
+
+        // The innerText property can be used to write the dynamic text on the html document. 
+        // for output check inspect
+        document.getElementById("p2").innerText="hello world";
+    </script>
+</body>
+</html>
