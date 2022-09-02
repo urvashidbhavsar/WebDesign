@@ -1,0 +1,27 @@
+JavaScript is a lightweight, cross-platform, and interpreted compiled programming language which is also known as the scripting language for webpages. 
+
+it also known as object-based scripting language.
+
+It is well-known for the development of web pages, many non-browser environments also use it.
+
+In 1993, Mosaic, the first popular web browser, came into existence. In the year 1994, Netscape was founded by Marc Andreessen.
+
+JavaScript is used to create interactive websites. It is mainly used for:
+
+Client-side validation,
+Dynamic drop-down menus,
+Displaying date and time,
+Displaying pop-up windows and dialog boxes (like an alert dialog box, confirm dialog box and prompt dialog box),
+Displaying clocks etc.
+
+it is written in <script> tag.
+
+<script> tag written in <head> or <body> section.
+
+example, 
+<script>  
+document.write("Hello JavaScript by JavaScript");  
+</script>  
+
+where document is a browser page which is one object.
+write() is a function to display content.

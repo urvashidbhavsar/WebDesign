@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    div{
+        border: 2px solid black;
+        height: 100px;
+        width: 100px;
+    }
+</style>
+</head>
+<body>
+    <button id="btn">Click Here</button> <br><br>
+    <div id="div1"></div>
+    <script>
+        let btn=document.getElementById("btn");
+        btn.addEventListener("click",function (){
+            document.getElementById("div1").innerHTML="<style>#div1{background-color:green;}</style>"
+            })
+
+        let over=document.getElementById("div1");
+        over.addEventListener("mouseover",function(){
+            document.getElementById("div1").innerHTML="<style>#div1{height:150px;width:150px;}</style>"
+        })
+    </script>
+</body>
+</html>

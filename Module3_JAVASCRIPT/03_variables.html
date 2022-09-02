@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- there is the three keywords are used to declare variable - 
+        let, const and var
+    -->
+
+    <script>
+
+        // using var keyword you can redeclare and reassign the value
+        var x = 5;
+        document.write(x)
+
+        var x = 6
+        document.write(x)
+
+        // using let keyword you can reassign value but not redeclare.
+
+        let y = 5;
+        document.write(y)
+
+        // let y=6 -> it give error in the browser.
+
+        y=6;
+        document.write(y)
+
+        // using const keyword you can not reassign  and redeclare.
+
+        const z = 3.14;
+
+        // z = 4; -> this give error in browser because const take a fix value.
+
+        document.write(z);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindValue</title>
+</head>
+
+<body>
+    <p> values are : 150,52,66,27,99,50</p>
+    <button>Check</button>
+    <h3>Result</h3>
+    <script>
+        let btnget = document.querySelector("button");
+        let result = document.querySelector("h3");
+
+        let numbers = [150, 52, 66, 27, 99, 50];
+
+        btnget.addEventListener('click', () => {
+            let min = Math.min(...numbers);
+            let max = Math.max(...numbers);
+            result.innerText = `min : ${min} - max : ${max}`;
+        })
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{height: 100px; width: 100px;}
+    </style>
+    <script>
+        function green(){
+            document.getElementById("div1").innerHTML="<style>#div1{background-color:green;}</style>"
+        }
+        function blue(){
+            document.getElementById("div2").innerHTML="<style>#div2{background-color:blue;}</style>"
+        }
+    </script>
+</head>
+<body>
+    <button id="btn1" onclick="green()">Green</button>
+    <button id="btn2" onclick="blue()">Blue</button>
+
+    <hr>
+    <div id="div1"></div> <br><br>
+    <div id="div2"></div>
+</body>
+</html>
