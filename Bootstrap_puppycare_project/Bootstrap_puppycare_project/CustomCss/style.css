@@ -1,0 +1,101 @@
+.site-header a{
+    color: orangered !important;
+}
+.site-header .btn:hover{
+    background-color: black !important;
+    color:white !important;
+    border: 1px solid white !important;
+}
+.sliders img{
+    height: 680px;
+    width: 100%;
+}
+.p-info h1,p{
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.p-info button{
+    height: 50px;
+    width: 150px;
+}
+.p-info .icons{
+    text-align: center;
+    height: 50px;
+    width: 70px;
+    border: 2px solid none;
+    padding: 10px;
+    border-radius: 20px 80px 60px 90px;
+    background-color: rgb(166, 166, 231);
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+a:hover{
+    color: orangered;
+}
+.p-info span{
+    font-size: 30px;
+    color: white;
+}
+.happy-res{
+    background-color: aliceblue;
+}
+.information{
+    background-color: aliceblue;
+}
+.happy-res img{
+    border-radius: 10px;
+    width: 500px;
+}
+.happy-res h1,p{
+    padding: 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.happy-res ul{
+    list-style-type: none;
+}
+.activities img{
+    height: 450px;
+    width: 450px;
+border-radius: 10px;
+}
+.activities .back{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+}
+.activities .back1{
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 10px;
+}
+.activities .back2{
+    background-color: deeppink;
+    color: white;
+    border-radius: 10px;
+}
+.activities .back3{
+    background-color: coral;
+    color: white;
+    border-radius: 10px;
+}
+.Blog{
+    background-color: aliceblue;
+}
+.site-footer{
+    background-color: black;
+}
+.information .info1{
+    background-color: rgb(240, 232, 232);
+    border-radius: 10px;
+}
+.information .info1 span{
+    color: orangered;
+    font-size: 50px;
+}
+.information .info1 a{
+    color: darkblue;
+    font-size: 0.3in;
+}
