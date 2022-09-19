@@ -1,0 +1,76 @@
+.site-header a {
+  color: orangered !important;
+}
+.site-header .btn:hover {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid white !important;
+  position: relative;
+}
+.site-header .form_section {
+  position: absolute;
+  top: 500px;
+  /* right: 0; */
+  /* bottom: 0; */
+}
+.sliders .right-img {
+  /* height: 500px; */
+  width: 100%;
+  position: relative;
+}
+.sliders .contents {
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  font-size: 0.5in;
+  color: magenta;
+}
+.sliders .contents h4 {
+  font-size: 0.5in;
+}
+.sliders .contents img {
+  margin-left: 120px;
+}
+.footer {
+  position: relative;
+}
+.footer .content {
+  position: absolute;
+  top: 50px;
+}
+.img-1 {
+  height: 300px;
+  width: 400px;
+  margin-left: 221px;
+}
+.footer h4,
+p {
+  text-align: center;
+}
+.form_section {
+  float: left;
+  background-color: #f8faf9;
+  height: auto;
+  margin-top: 200px;
+}
+.form_section ul {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+.form_section li {
+  float: left;
+  font-size: 16px;
+  color: #474646;
+  padding: 10px 40px;
+}
+.form_section li a {
+  color: #474646;
+}
+.form_section li a:hover {
+  color: #b7b7b7;
+}
+.form_section a {
+  text-decoration: none;
+  color: magenta !important;
+}
